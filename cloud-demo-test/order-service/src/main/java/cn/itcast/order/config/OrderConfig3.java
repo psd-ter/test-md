@@ -36,7 +36,7 @@ import org.springframework.context.annotation.PropertySource;
  * 1.加了环境标识的bean, 只有这个环境被激活的时候,这个bean才能注册到容器中,默认是default环境
  * 2.可以加在类上
  */
-@Configuration
+//@Configuration
 @PropertySource(value = {"classpath:/person.yml"})
 public class OrderConfig3 {
 @Profile("test")//设置测试环境激活这个bean

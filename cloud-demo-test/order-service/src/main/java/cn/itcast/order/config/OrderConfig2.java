@@ -39,7 +39,7 @@ import org.springframework.context.annotation.Configuration;
  * postProcessAfterInitialization  在初始化之后
  * @see cn.itcast.order.bean.MyBeanPostProcessor
  */
-@Configuration
+//@Configuration
 //@Import(OrderService.class)
 public class OrderConfig2 implements InitializingBean, DisposableBean {
 //    @Bean(initMethod = "init",destroyMethod = "distroy")

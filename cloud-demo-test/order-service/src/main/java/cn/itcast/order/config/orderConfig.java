@@ -33,8 +33,8 @@ import org.springframework.stereotype.Controller;
 
 // @Import  可以将一个类直接导入到ioc容器中注册为一个bean.这个类可以是第三方的
 
-@Import(OrderService.class)
-@Configuration
+//@Import(OrderService.class)
+//@Configuration
 @ComponentScan(value = "cn.itcast", excludeFilters = {
         @ComponentScan.Filter(type = FilterType.ANNOTATION, classes = Controller.class)//按照类型排除
 },
@@ -43,7 +43,7 @@ import org.springframework.stereotype.Controller;
         @ComponentScan.Filter(type = FilterType.ASSIGNABLE_TYPE,classes = OrderService.class)//按照给定类型。
         },useDefaultFilters = false
 )
-class orderConfig {
+public class orderConfig {
     @Bean(value = "newName")
     @Scope("singleton")
     @Lazy

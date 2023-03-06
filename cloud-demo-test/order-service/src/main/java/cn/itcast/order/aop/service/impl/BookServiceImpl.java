@@ -1,7 +1,7 @@
-package cn.itcast.order.service.impl;
+package cn.itcast.order.aop.service.impl;
 
-import cn.itcast.order.service.BookService;
-import org.springframework.stereotype.Repository;
+import cn.itcast.order.aop.service.BookService;
+import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
 
 @Service
